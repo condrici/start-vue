@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<title>Some Vue Action</title>
+<body>
+    <!-- Vue START -->
+    <div id ="app">
+        <!-- Vue If Statement -->
+        <div v-if="showDiv">
+            <p>{{ title }} {{ number }}</p>
+
+            <!-- Vue Directive -->
+            <button v-on:click="number++">Increase number</button>
+            <button v-on:click="number--">Decrease number</button>
+
+            <!-- Vue Directive with shortcut notation and method -->
+            <button @click="changeTitle('new title')">Change Title</button>
+        </div>
+    </div>
+    <!-- Vue END -->
+
+    <!-- Vue Application -->
+    <script src="app.js"></script>
+</body>
+</html>
